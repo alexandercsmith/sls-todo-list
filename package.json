@@ -1,0 +1,23 @@
+{
+  "name": "sls-todo-list",
+  "version": "1.0.0",
+  "description": "Serverless CRUD App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackerbrief/sls-todo-list.git"
+  },
+  "keywords": [],
+  "author": "Alexander Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackerbrief/sls-todo-list/issues"
+  },
+  "homepage": "https://github.com/hackerbrief/sls-todo-list#readme",
+  "devDependencies": {
+    "serverless-offline": "^4.9.2"
+  }
+}
