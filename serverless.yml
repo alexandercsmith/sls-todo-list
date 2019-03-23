@@ -39,12 +39,18 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  read:
-    handler: todos/read.read
+  getTodo:
+    handler: todos/read.getTodo
     events:
       - http:
-          path: todos
+          path: todo
           method: get
+  createTodo:
+    handler: todos/create.createTodo
+    events:
+      - http:
+          path: todo
+          method: post
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
