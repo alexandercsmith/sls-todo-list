@@ -9,6 +9,11 @@ provider:
   stage: dev
   region: us-east-1
 
+package:
+  include:
+    - todos/**
+    - models/**
+
 functions:
   getTodo:
     handler: todos/read.getTodo

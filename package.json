@@ -19,5 +19,9 @@
   "homepage": "https://github.com/hackerbrief/sls-todo-list#readme",
   "devDependencies": {
     "serverless-offline": "^4.9.2"
+  },
+  "dependencies": {
+    "pg": "^7.9.0",
+    "sequelize": "^5.1.0"
   }
 }
