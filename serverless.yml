@@ -25,7 +25,7 @@ functions:
     handler: todos/read.getTodo
     events:
       - http:
-          path: todo
+          path: todo/{id}
           method: get
   createTodo:
     handler: todos/create.createTodo
