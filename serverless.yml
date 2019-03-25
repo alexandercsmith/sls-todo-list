@@ -15,6 +15,12 @@ package:
     - models/**
 
 functions:
+  listTodos:
+    handler: todos/read.listTodos
+    events:
+      - http:
+          path: todos
+          method: get
   getTodo:
     handler: todos/read.getTodo
     events:
@@ -27,3 +33,9 @@ functions:
       - http:
           path: todo
           method: post
+  deleteTodo:
+    handler: todos/delete.deleteTodo
+    events:
+      - http:
+          path: todo/{id}
+          method: delete
