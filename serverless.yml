@@ -33,6 +33,12 @@ functions:
       - http:
           path: todo
           method: post
+  updateTodo:
+    handler: todos/update.updateTodo
+    events:
+      - http:
+          path: todo/{id}
+          method: patch
   deleteTodo:
     handler: todos/delete.deleteTodo
     events:

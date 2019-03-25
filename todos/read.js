@@ -1,5 +1,3 @@
-'use strict';
-
 const db = require('../db.js');
 
 module.exports.getTodo = async (event, context, callback) => {

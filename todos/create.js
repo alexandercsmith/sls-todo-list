@@ -13,5 +13,5 @@ module.exports.createTodo = (event, context, callback) => {
           todo: todo
         })
       })
-    })
+    });
 }
