@@ -9,6 +9,8 @@ provider:
   stage: dev
   region: us-east-1
   timeout: 300
+  apiKeys:
+    - todoAPI
 
 package:
   include:
@@ -28,21 +30,25 @@ functions:
       - http:
           path: todo/{id}
           method: get
+          private: true
   createTodo:
     handler: todos/create.createTodo
     events:
       - http:
           path: todo
           method: post
+          private: true
   updateTodo:
     handler: todos/update.updateTodo
     events:
       - http:
           path: todo/{id}
           method: patch
+          private: true
   deleteTodo:
     handler: todos/delete.deleteTodo
     events:
       - http:
           path: todo/{id}
           method: delete
+          private: true
